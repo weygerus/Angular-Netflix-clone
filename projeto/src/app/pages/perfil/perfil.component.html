@@ -1,0 +1,13 @@
+<div class="fundo">
+    <img src="../../../assets/img/netflix-logo-5.png" alt="" class="brand">
+    <div class="cont">
+        <h3 class="titulo">Quem está assistindo?</h3>
+            <button *ngFor="let btn of botoes" routerLink="/home" id="perfil" class="{{btn.class}}">{{btn.texto}}</button>
+            <button class="btn-perfil-config">
+                <i class="bi bi-plus-circle"></i>
+            </button>
+        <button (click)="manageProfiles()" class="gerenciar">Gerenciar perfis</button>
+    </div>
+</div>
+
+

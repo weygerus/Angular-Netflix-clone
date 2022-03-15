@@ -1,0 +1,93 @@
+<img class="brand" src={{logotipo}} alt="brand">
+<!-- FUNDO -->
+<div class="fundo">
+        <!-- FOOTER  -->
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="text-box">
+                        
+                        <h3 class="duvidas">Dúvidas? Ligue <span><a class="duvidas-link" href="">0800-761-4631</a></span></h3>
+
+                        <div class="container-links">
+                            <div class="row">
+                                <div class="col">
+                                    <li class="item"><a href=""></a>Perguntas frequentes</li>
+                                    <li class="item"><a href=""></a>Preferências de cookies</li>
+                            
+                                    <div class="select-div">
+                                        <i class="bi bi-globe"></i>
+                                        <select class="select" name="" id="">
+                                                <option class="option" value="" selected>English</option>
+                                                <option class="option" value="">Portuguese</option>
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col">
+                                    <li class="item"><a href=""></a>Centro de ajuda</li>
+                                    <li class="item"><a href=""></a>Informações corporativas</li>
+                                </div>
+                                <div class="col">
+                                    <li class="item"><a href=""></a>Termos de uso</li>
+                                </div>
+                                <div class="col">
+                                    <li class="item"><a href=""></a>Privacidade</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+            </footer>
+        <!-- FOOTER -->
+</div>
+<!-- FUNDO -->
+
+<!-- LOGIN FORM -->
+<div class="container-login">
+    <div class="login-form-wrapper">
+
+        <h3 class="titulo">{{titulo}}</h3>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label class="input-placeholder" for="floatingInput">Email ou numero de telefone</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label class="input-placeholder" for="floatingPassword">Senha</label>
+        </div>
+        <button class="btn btn-danger"><a href="">Entrar</a></button>
+
+        <div class="lembrar-ajuda">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">Lembre-se de mim</label>
+            </div>
+            <a href="" class="linkajuda">Precisa de ajuda?</a>
+        </div>
+
+        <div class="info">
+            <div class="fb">
+                <img src="../../../../assets/img/Facebook_icon_2013.svg.png" id="fb" class="fb-icon" width="20px" alt="">
+                <label class="fb-label" for="fb">Conectar com Facebook</label>
+            </div>
+            <p class="novo-por-aqui">Novo por aqui?<span class="assine-agora"><a class="assine-agora-link" href="">Assine agora</a></span></p>
+
+            <p class="info-menos">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.
+                <span class="info-mais" *ngIf="mostrar">
+                                <p class="quebra"></p>
+                                As informações recolhidas pelo Google
+                                reCAPTCHA estão sujeitas à <span class="politica">Política de
+                                Privacidade</span> e <span class="politica">Termos de Uso</span>, e são usadas
+                                para oferecer, manter e melhorar o serviço 
+                                reCAPTCHA e por questões de segurança
+                                (não são usadas para exibir anúncios
+                                personalizados pelo Google).
+                </span>
+                <a class="saiba-mais" id="saibamais" (click)="mostrarDiv()">Saiba mais</a>
+            </p>
+        </div>
+        
+    </div>  
+</div>
+<!-- LOGIN FORM -->

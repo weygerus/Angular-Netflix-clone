@@ -1,0 +1,165 @@
+<div class="area">
+    <div class="img-fundo"></div>
+    <div class="gradient"></div>    
+    <img src="../../../assets/img/netflix-logo-5.png" alt="netflix-brand" class="brand">
+    <button routerLink="/login" class="button-entrar">Entrar</button>
+
+    <div class="select-div">
+        <i class="bi bi-globe"></i>
+        <select class="select" name="" id="">
+                <option class="option" value="" selected>English</option>
+                <option class="option" value="">Portuguese</option>
+        </select>
+    </div>
+
+    <div class="home-box">
+        <h3 class="page-title">{{pageTitle}}</h3>
+        <p class="page-subtitle">{{pageSubtitle}}</p>
+        <p class="label-input">{{labelInput}}</p>
+            <div class="input-box">
+                <input type="email" class="email" placeholder="Email">
+                <button type="submmit" class="button-email">Vamos Lá ></button>
+            </div>
+    </div>
+
+    
+    <div class="page">
+
+        <!-- Imagens e textos -->
+        <div class="a-1">
+            <div class="campo-texto1">
+                <h3 class="tv">Aproveite na TV.</h3>
+                <p class="sub-tv">Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+            </div>
+            <img class="img-1" src="../../../assets/img/tv.png" alt=""> 
+        </div>
+        <div class="a-2">
+            <div class="campo-texto2">
+                <h3 class="baixe">Baixe séries para assistir offline.</h3>
+                <p class="sub-baixe">Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+            </div>
+            <img class="img-2" src="../../../assets/img/mobile.jpg" alt="">
+        </div>
+        <div class="a-3">
+            <div class="campo-texto1">
+                <h3 class="assista">Assista quando quiser.</h3>
+                <p class="sub-assista">Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+            </div>
+            <img class="img-3" src="../../../assets/img/assista.png" alt="">
+        </div>
+        <div class="a-4">
+            <div id="kids" class="campo-texto2">
+                <h3 class="kids">Crie perfis para crianças.</h3>
+                <p class="sub-kids">Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+            </div>
+            <img class="img-4" src="../../../assets/img/kids.png" alt="">
+        </div>
+        <!-- Fim -->
+
+        <!-- Perguntas frequentes -->
+        <div class="perguntas">
+            <h3 class="title">Perguntas Frequentes</h3>
+
+            <div class="abas">
+
+                <div (click)="mostrarDiv1()" class="aba-1">
+                    <p class="texto-aba">O que é a Netflix?</p>
+                    <span class="teste" >
+                        <div id="linha-1" class="linha-1"></div>
+                        <div id="linha-2" class="linha-2"></div>
+                    </span>
+                </div>
+                    <div *ngIf="mostrar1" id="mais" class="mais">
+                        <p id="texto-mais1" class="texto-mais">A Netflix é um 
+                            serviço de transmissão online que 
+                            oferece uma ampla variedade de séries,
+                            filmes e documentários premiados em milhares
+                            de aparelhos conectados à internet.
+                        </p>
+                        <p id="texto-mais2" class="texto-mais">
+                            Você pode assistir a quantos filmes e séries
+                            quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+                        </p>
+                    </div>
+
+
+                <div (click)="mostrarDiv2()" class="aba-1">
+                    <p class="texto-aba">Quanto custa a Netflix?</p>
+                    <span class="teste">
+                        <div id="linha-3" class="linha-1"></div>
+                        <div id="linha-4" class="linha-2"></div>
+                    </span>
+                </div>
+                    <div *ngIf="mostrar2" id="mais" class="mais">
+                        <p id="texto-mais" class="texto-mais">
+                            Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$25,90 a R$55,90 por mês. Sem contrato nem taxas extras.
+                        </p>
+                    </div>
+
+
+                <div (click)="mostrarDiv3()" class="aba-1">
+                    <p class="texto-aba">Onde posso assistir?</p>
+                    <span class="teste">
+                        <div id="linha-5" class="linha-1"></div>
+                        <div id="linha-6" class="linha-2"></div>
+                    </span>
+                </div>
+                    <div *ngIf="mostrar3" id="mais" class="mais">
+                        <p id="texto-mais1" class="texto-mais">
+                            Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
+                        </p>
+                        <p id="texto-mais2" class="texto-mais">
+                            Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.
+                        </p> 
+                    </div>
+
+
+                <div  (click)="mostrarDiv4()" class="aba-1">
+                    <p class="texto-aba">Como faço pra cancelar?</p>
+                    <span class="teste">
+                        <div id="linha-7" class="linha-1"></div>
+                        <div id="linha-8" class="linha-2"></div>
+                    </span>
+                </div>
+                    <div *ngIf="mostrar4" id="mais" class="mais">
+                        <p id="texto-mais" class="texto-mais">
+                            A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.
+                        </p>
+                    </div>
+
+                <div  (click)="mostrarDiv5()" class="aba-1">
+                    <p class="texto-aba">Como faço pra cancelar?</p>
+                    <span class="teste">
+                        <div id="linha-9" class="linha-1"></div>
+                        <div id="linha-10" class="linha-2"></div>
+                    </span>
+                </div>
+                    <div *ngIf="mostrar5" id="mais" class="mais">
+                        <p id="texto-mais" class="texto-mais">
+                            A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.
+                        </p>
+                    </div>
+
+
+
+                <div  (click)="mostrarDiv6()" class="aba-1">
+                    <p class="texto-aba">A Netflix é adequada para crianças?</p>
+                    <span class="teste">
+                        <div id="linha-11" class="linha-1"></div>
+                        <div id="linha-12" class="linha-2"></div>
+                    </span>
+                </div>
+                    <div *ngIf="mostrar6" id="mais" class="mais">
+                        <p id="texto-mais1" class="texto-mais">
+                            A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos pais.
+                        </p>
+                        <p id="texto-mais2" class="texto-mais">
+                            O recurso de controle dos pais, incluso nos perfis para crianças e protegido por PIN, permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam.
+                        </p> 
+                    </div>
+                
+            </div>
+            <!-- Fim -->
+        </div>
+    </div>
+</div>

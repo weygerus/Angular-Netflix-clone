@@ -1,0 +1,257 @@
+.fundo{
+    overflow-x: hidden;
+    background-image: url(../../../../assets/img/BR-pt-20220214-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    filter: brightness(50%);
+}
+.brand{
+    width: 166.5px;
+    position: absolute;
+    top: 23.7px;
+    left: 45.9px;
+    z-index: 10;
+}
+
+
+
+
+/* */
+.container-login{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+}
+.login-form-wrapper{
+    width: 450px;
+    height: 658px;
+    background-color: rgba(0,0,0,0.7);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    border-radius: 5px;
+}
+.form-floating{
+    margin: 0 auto;
+    width: 70%;
+}
+.form-control{
+    background-color: #333333;
+    color: #fff;
+    border: none;
+    height: 50px;
+}
+.form-control:focus{
+    box-shadow: none;
+    background-color: #454545;
+}
+.titulo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0 15%;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+/*  */
+
+
+/* DIV LEMBRAR-AJUDA  */
+.lembrar-ajuda{
+    display: flex;
+    align-items: center;
+}
+.input-placeholder{
+    color: #ccc;
+    font-size: 16px;
+    margin-left: 7px;
+    margin-top: -5px;
+}
+.form-check{
+    margin-left: 15%;
+    margin-top: -11px;
+}
+.form-check-input{
+    background-color: #737373;
+    width: 17px;
+    margin-top: 5px;
+    border-radius: 2.5px;
+}
+.form-check-input:checked{
+    background-color: #fff;
+    box-shadow: none;
+    border: none;
+}
+.form-check-input:focus{
+    background-color: #fff;
+    box-shadow: none;
+    border: none;
+}
+.form-check-label{
+    color: #ccc;
+    font-size: 13.5px;
+    font-weight: 400;
+    margin-left: -3px;
+}
+.linkajuda{ 
+    text-decoration: none;
+    color: #ccc;
+    font-size: 13.5px;
+    font-weight: 400;
+    margin-left: 78px;
+    margin-top: -12px;
+}
+.linkajuda:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* --------- */
+
+
+/* DIV INFO */
+.info{
+    margin-left: 15%;
+    margin-top: 50px;
+}
+.fb-label{
+    color: darkgray;
+    font-size: 13px;
+    margin-left: 10px;
+}
+p.novo-por-aqui{
+    color: darkgray;
+    margin-top: 11.5px;
+}
+a.assine-agora-link{
+    text-decoration: none;
+    color: #ffff;
+}
+span.assine-agora{
+    font-size: 17px;
+    margin-left: 5px;
+}
+span.assine-agora:hover{
+    text-decoration: underline;
+}
+.saiba-mais{
+    text-decoration: none;
+    color: #016ddb;
+    cursor: pointer;
+}
+.saiba-mais:hover{
+    text-decoration: underline;
+}
+.info-menos{
+    color: darkgray;
+    margin-top: -7px;
+    line-height: 15px;
+    width: 300px;
+    font-size: 13px;
+}
+.quebra{
+    margin-top: -2px;
+}
+.info-mais{
+    color: darkgray;
+    padding-top: 20px;
+}
+.politica{
+    text-decoration: none;
+    color: #016ddb;
+    cursor: pointer;
+}
+.politica:hover{
+    text-decoration: underline;
+}
+/* --------- */
+
+
+/* BOTÃO SUBMIT */
+.btn-danger{
+    width: 70%;
+    height: 50px;
+    margin: 20px auto;
+}
+.btn-danger>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* --------- */
+
+
+
+
+/* FOOTER */
+.footer{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 258px;
+    margin-top: 840px;
+}
+.footer-container{
+    width: 100%;
+}
+.text-box{
+    margin-left: 20%;
+    margin: 0px auto;
+    padding-top: 28px;
+    padding-left: 10px;
+    max-width: 1020px;
+}
+.duvidas{
+    color: #fff;
+    font-size: 16.5px;
+    font-weight: 350;
+    z-index: 10;
+}
+.duvidas-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.duvidas-link:hover{
+    text-decoration: underline;
+}
+.container-links{
+    display: grid;
+
+    padding-top: 18px;
+    max-width: 980px;
+}
+.item{
+    list-style: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.item:hover{
+    text-decoration: underline;
+}
+.select-div{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.select{
+    background-color: #000;
+    font-size: 13.5px;
+    text-align: center;
+    width: 130px;
+    color: #ffff;
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.bi-globe{
+    color: #fff;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.select:focus{
+    outline: none;
+}
+
+/* ------ */

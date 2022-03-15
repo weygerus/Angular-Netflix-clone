@@ -1,0 +1,357 @@
+.area{ 
+    height: 200vh;
+}
+.img-fundo{
+    background-image: url(../../../assets/img/img-home.jpg);
+    background-position: center -55px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 722px;
+    filter: brightness(40%);
+}
+@media(max-width: 1500px){
+    .img-fundo{
+        background-position: 0 0;
+    }
+}
+.brand{
+    width: 166.5px;
+    position: absolute;
+    top: 27px;
+    left: 56px;  
+}
+/* botão entrar */
+.button-entrar{
+    position: absolute;
+    top: 27px;
+    right: 55px;
+    width: 80px;
+    height: 35px;
+    background-color: red;
+    color: #ffff;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 3px;
+    padding-bottom: 2px;
+}
+/* select */
+.select-div{
+    position: absolute;
+    top: 27px;
+    right: 160px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.select{
+    background-color: #000;
+    font-size: 13.5px;
+    text-align: center;
+    width: 130px;
+    color: #ffff;
+    height: 35px;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 5px;
+    padding-bottom: 2px;
+}
+.bi-globe{
+    color: #fff;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+.select:focus{
+    outline: none;
+}
+/* ------- */
+
+
+/* Texto */
+.home-box{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 240px;
+    text-align: center;
+    justify-items: center;
+    max-width: 800px;
+}
+.page-title,.page-subtitle,.label-input{
+    color: #ffff;
+}
+.page-title{
+    font-size: 65px;
+    font-weight: 700;
+}
+.page-subtitle{
+    font-size: 30px;
+}
+@media (max-width:1450px){
+
+    .page-title{
+        font-size: 45px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+/* Input Email */
+.input-box{
+    display: flex;
+    justify-content: center;
+}
+input.email{
+    width: 500px;
+    height: 70px;
+    padding-left: 10px;
+}
+.button-email{
+    background-color: red;
+    color: #ffff;
+    
+    width: 200px;
+    height: 70px;
+
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+}
+.input:focus{
+    outline: none;
+    border: 3px solid lightblue;
+}
+@media(max-width: 1500px){
+    input.email{
+        width: 400px;
+        height: 60px;
+    }
+    .button-email{
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+@media(max-width: 950px){
+    .input-box{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    input.email{
+
+        margin: 0 auto;
+    }
+    .button-email{
+        margin: 0 auto;
+    }
+}
+/* Fim */
+
+
+/* page geral */
+.page{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+}
+/* Fim */
+
+
+/* .campo-texto1{
+    
+} */
+
+.a-1{
+    background-color: #000;
+    border-top: solid 8px #ccc;
+    height: 450px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 0 10%;
+}
+.a-2{
+    background-color: #000;
+    border-top: solid 8px #ccc;
+    height: 450px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 0 10%;
+}
+.a-3{
+    background-color: #000;
+    border-top: solid 8px #ccc;
+    height: 450px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 0 10%;
+}
+.a-4{
+    background-color: #000;
+    border-top: solid 8px #ccc;
+    height: 450px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 0 10%;
+}
+@media (max-width: 900px){
+    .a-1,.a-2,.a-3,.a-4{
+        flex-direction: column;
+        height: 700px;
+    }
+} 
+
+
+/* titulos */
+.tv,.baixe,.assista,.kids{
+    color: #ffff;
+    font-size: 50px;
+}
+/* sub-titulos */
+.sub-tv,.sub-baixe,.sub-assista,.sub-kids{
+    color: #ffff;
+    max-width: 500px;
+    font-size: 25px;
+}
+@media(max-width: 900px){
+    .campo-texto1{
+        width: 100%;
+        margin-left: 0%;
+        margin: 0 auto;
+    }
+    .campo-texto2{
+        width: 100%;
+        margin-right: 0%;
+        margin: 0 auto;
+    }
+    .tv,.baixe,.assista,.kids{
+        text-align: center;
+    }
+    .sub-tv,.sub-baixe,.sub-assista,.sub-kids{
+        width: 800px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+
+/* imagens direita */
+.img-1{
+    width: 460px;
+    height: 350px;
+}
+.img-3{
+    width: 460px;
+    height: 350px;
+}
+/* imagens esquerda */
+.img-2{
+    width: 500px;
+    height: 350px;
+}
+.img-4{
+    width: 500px;
+    height: 350px;
+}
+@media(max-width: 900px){
+    .img-1,.img-2,.img-3,.img-4{
+        margin: 0 auto;
+    }
+}
+
+/* perguntas frequentes */
+.perguntas{
+    height: 1600px;
+    background-color: #000;
+    border-top: solid 10px #ccc;
+    text-align: center;
+}
+.title{
+    font-size: 55px;
+    color: #ffff;
+    margin: 20px auto 50px auto;
+}
+
+
+
+.aba-1{
+    max-width: 850px;
+    height: 80px;
+    background-color: #303030;
+    margin: 0 auto 10px auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+}
+.texto-aba{
+    font-size: 30px;
+    padding-top: 15px;
+    color: #ffff;
+}
+
+
+.mais{
+    max-width: 850px;
+    background-color: #303030;
+    margin: 0px auto -5px auto;
+    color: #ffff;
+    font-size: 25px;
+    text-align: left;
+    padding: 15px 0px 0px 40px;
+}
+.texto-mais{
+    max-width: 700px;
+
+}
+#texto-mais{
+    padding-top: 20px;
+    padding-bottom: 35px;     
+}
+/* #Texto-mais é usado pra divs de um paragrafo, enquanto #texto-mais1 e #texto-mais2 são usados em divs de 2 paragrafos  */
+#texto-mais1{
+    padding-top: 20px;
+}
+#texto-mais2{
+    padding-bottom: 35px;
+}
+
+
+
+/* span abrir e fechar */
+span.teste{
+    display: flex;
+    padding-right: 30px;
+}
+.linha-1,.linha-2{
+    height: 30px;
+    width: 2px;
+    background-color: #ffff;
+    transition: 0.2s;
+}
+.linha-1{
+    transform: rotate(90deg);
+    margin-right: -1.5px;
+}
+/* -------- */
+
+
+
+
+/* -------- */
