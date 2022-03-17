@@ -64,6 +64,88 @@
     outline: none;
 }
 /* Fim */
+
+
+
+/* Home box */
+.home-box{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin: 230px auto;
+    text-align: center;
+}
+.page-title,.page-subtitle,.label-input{
+    color: #ffff;
+}
+.page-title{
+    font-size: 65px;
+    font-weight: 700;
+    width: 700px;
+}
+.page-subtitle{
+    font-size: 29px;
+    font-weight: 450;
+    margin-bottom: 25px;
+}
+.label-input{
+    font-size: 20px;
+}
+@media(max-width:800px){
+    .page-title{
+        font-size: 45px;
+        width: 600px;
+    }
+    .page-subtitle{
+        font-size: 25px;
+    }
+    .label-input{
+        font-size: 25px;
+        max-width: 450px;
+        line-height: 30px;
+    }
+}
+@media(max-width: 610px){
+    .page-title{
+        font-size: 35px;
+        width: 400px;
+    }
+    .page-subtitle{
+        font-size: 20px;
+        max-width: 500px;
+    }
+    .label-input{
+        font-size: 22px;
+        max-width: 450px;
+        line-height: 30px;
+    }
+}
+@media(max-width: 410px){
+    .page-title{
+        font-size: 28px;
+        width: 90vw;
+    }
+    .page-subtitle{
+        font-size: 15px;
+        max-width: 500px;
+        font-weight: 600;
+    }
+    .label-input{
+        font-size: 15px;
+        max-width: 450px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+}
+
+
+
+
+
+
+/*
 .home-box{
     position: absolute;
     top: 0;
@@ -85,15 +167,13 @@
     font-size: 30px;
 }
 @media (max-width:1450px){
-
+    
     .page-title{
         font-size: 45px;
         max-width: 1000px;
         margin: 0 auto;
     }
 }
-
-/* Input Email */
 .input-box{
     display: flex;
     justify-content: center;
@@ -140,7 +220,9 @@ input.email{
     .button-email{
         margin: 0 auto;
     }
-}
+} */
+
+
 /* Fim */
 
 
@@ -155,7 +237,6 @@ input.email{
     height: 5px;
     background-color: #ccc;
 }
-
 .box-area,.area-reverse{
     height: 400px;
     max-width: 1200px;
@@ -177,7 +258,7 @@ input.email{
 .title{
     font-size: 60px;
     margin-top: 0px;
-    max-width: 500px;
+    max-width: 570px;
 }
 .sub-title{
     max-width: 500px;
