@@ -1,3 +1,4 @@
+import { BrowseComponent } from './pages/browse/browse.component';
 import { LoginComponent } from './core/auth/login/login.component';
 import { HomeComponent } from './core/home/home.component';
 import { NgModule, } from '@angular/core';
@@ -23,7 +24,12 @@ const routes: Routes = [
   {
     path: 'ManageProfiles',
     component: GerenciarComponent
-  }
+  },
+  {
+    path: 'Browse',
+    component: BrowseComponent
+  },
+
 ];
 
 @NgModule({

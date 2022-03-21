@@ -1,0 +1,28 @@
+<div class="area">
+    <nav class="main-menu">
+        <img src="../../../assets/img/netflix-logo-5.png" width="130px" alt="brand">
+        <div class="nav-bar">
+            <ul class="main-lista">
+                <li class="list-item">home</li>
+                <li class="list-item">filmes</li>
+                <li class="list-item">series</li>
+                <li class="list-item">em alta</li>
+            </ul>
+        </div>
+    </nav>   
+</div>
+<script>
+$(function() {
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() > 100) {
+            $(".main-menu").addClass("second-menu");
+            $(".main-lista").addClass("second-lista");
+        } else {
+            $(".main-menu").removeClass("second-menu");
+            $(".main-lista").removeClass("second-lista")
+        }
+    })
+})
+</script>
+
+<!-- nav Jquery scripts -->

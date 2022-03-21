@@ -9,6 +9,7 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { GerenciarComponent } from './pages/perfil/gerenciar/gerenciar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './core/home/home.component';
+import { BrowseComponent } from './pages/browse/browse.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HomeComponent } from './core/home/home.component';
     LoginComponent,
     PerfilComponent,
     GerenciarComponent,
-    HomeComponent
+    HomeComponent,
+    BrowseComponent
   ],
   imports: [
     RouterModule,
