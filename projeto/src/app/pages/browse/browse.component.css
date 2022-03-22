@@ -1,6 +1,6 @@
 .area{
     height: 1000px;
-    background-color: #ffff;
+    background-image: url();
 }
 .main-menu{
     width: 100%;
@@ -46,4 +46,9 @@ img{
 .list-item{
     cursor: pointer;
     padding-top: 2px;
+}
+
+
+.bg-video{
+    position: absolute;
 }
