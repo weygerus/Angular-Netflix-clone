@@ -1,4 +1,4 @@
-.area{
+.header{
     height: 1000px;
     background-image: url();
 }
@@ -29,7 +29,7 @@ img{
     justify-content: flex-start;
     gap: 25px;
 
-    color: #000;
+    color: #ffff;
     list-style: none;
     font-family: arial;
 }
@@ -51,4 +51,21 @@ img{
 
 .bg-video{
     position: absolute;
+    width: 100%;
+}
+
+
+
+.area{
+    height: 600px;
+    background-color: #000;
+    margin-top: -370px;
+}
+
+.title{
+    color: #fff;
+    position: absolute;
+    top: 270px;
+    left: 100px;
+    font-size: 70px;
 }
