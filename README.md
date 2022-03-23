@@ -1,6 +1,6 @@
 # Angular-Netflix-clone
 
-Projeto de estudo em Angular12
+Projeto de estudo em Angular12 :computer:
 
 Nesse projeto, estou desenvolvendo um clone do front-end da Netflix, usando conhecimentos
 em Angular12, Bootstrap, Jquery e CSS puro.
