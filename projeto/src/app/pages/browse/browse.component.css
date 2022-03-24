@@ -48,24 +48,27 @@ img{
     padding-top: 2px;
 }
 
-
+/* video */
 .bg-video{
     position: absolute;
     width: 100%;
 }
+/* FIM */
 
-
-
-.area{
-    height: 600px;
-    background-color: #000;
-    margin-top: -370px;
-}
-
+/* container-title */
 .title{
     color: #fff;
     position: absolute;
     top: 270px;
     left: 100px;
-    font-size: 70px;
+    width: 400px;
 }
+/* FIM */
+
+/* area carroseis */
+.area{
+    height: 600px;
+    background-color: red;
+    margin-top: -370px;
+}
+/* FIM */
