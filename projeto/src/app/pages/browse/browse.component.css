@@ -1,74 +1,16 @@
-.header{
-    height: 1000px;
-    background-image: url();
-}
-.main-menu{
-    width: 100%;
-    padding: 20px 20px 10px 20px;
-    display: flex;
-    align-items: center;
-    
-    position: fixed;
-    transition: 0.1s ease;
-}
-.second-menu{
-    width: 100%;
-    padding: 20px 20px 10px 20px;
-    display: flex;
-    align-items: center;
-    
-    position: fixed;
-    background-color: #0a0a0a;
-}
-img{
-    margin-right: 40px;
-    margin-top: -10px;
-}
-.main-lista{
-    display: flex;
-    justify-content: flex-start;
-    gap: 25px;
-
-    color: #ffff;
-    list-style: none;
-    font-family: arial;
-}
-.second-lista{
-    display: flex;
-    justify-content: flex-start;
-    gap: 25px;
-
-
-    color: #ffff;
-    list-style: none;
-    font-family: arial;
-}
-.list-item{
-    cursor: pointer;
-    padding-top: 2px;
-}
-
-/* video */
-.bg-video{
-    position: absolute;
-    width: 100%;
-}
-/* FIM */
-
-/* container-title */
-.title{
-    color: #fff;
-    position: absolute;
-    top: 270px;
-    left: 100px;
-    width: 400px;
-}
-/* FIM */
-
-/* area carroseis */
 .area{
-    height: 600px;
-    background-color: red;
-    margin-top: -370px;
+    height: 200vh;
+    margin-top: -10px;
+    background-color: #101010;
 }
-/* FIM */
+.slick-slider {
+    width: 90%;
+    margin: auto;
+}  
+body .slick-prev, 
+body .slick-next {
+    height: 45px;
+    width: 40px;
+    background: grey !important;
+    z-index: 100;
+}

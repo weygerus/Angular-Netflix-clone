@@ -1,30 +1,67 @@
-<header class="header">
-
-    <video class="bg-video" src="../../../assets/videos/Interestelar - Trailer Oficial 3 (dub) [HD].mp4" autoplay="true">
-
-    </video>
-
-    <div class="container-title">
-        <img class="title" src="../../../assets/img/interstellar-logo.png" alt="movie-title">
-    </div>
-
-    <nav class="main-menu">
-        <img src="../../../assets/img/netflix-logo-5.png" width="130px" alt="brand">
-        <div class="nav-bar">
-            <ul class="main-lista">
-                <li class="list-item">home</li>
-                <li class="list-item">filmes</li>
-                <li class="list-item">series</li>
-                <li class="list-item">em alta</li>
-            </ul>
-        </div>
-    </nav>  
-    
-    
-    
-</header>
 <div class="area">
+    <ngx-slick-carousel
+            class="carousel"
+            #slickModal="slick-carousel"
+            [config]="slideConfig"
+            (init)="slickInit($event)"
+            >
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <img src="{{slide.img}}" alt="" width="190px">
+        </div>
 
+    </ngx-slick-carousel>
+    <ngx-slick-carousel
+            class="carousel"
+            #slickModal="slick-carousel"
+            [config]="slideConfig"
+            (init)="slickInit($event)"
+            >
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <img src="{{slide.img}}" alt="" width="190px">
+        </div>
+
+    </ngx-slick-carousel>
+    <ngx-slick-carousel
+            class="carousel"
+            #slickModal="slick-carousel"
+            [config]="slideConfig"
+            (init)="slickInit($event)"
+            >
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <img src="{{slide.img}}" alt="" width="190px">
+        </div>
+
+    </ngx-slick-carousel>
+    <ngx-slick-carousel
+            class="carousel"
+            #slickModal="slick-carousel"
+            [config]="slideConfig"
+            (init)="slickInit($event)"
+            >
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <img src="{{slide.img}}" alt="" width="190px">
+        </div>
+
+    </ngx-slick-carousel>
+    <ngx-slick-carousel
+            class="carousel"
+            #slickModal="slick-carousel"
+            [config]="slideConfig"
+            (init)="slickInit($event)"
+            >
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <img src="{{slide.img}}" alt="" width="190px">
+        </div>
+
+    </ngx-slick-carousel>
+    <style>
+      .carousel{
+          margin-bottom: 100px;
+      }
+        .slide{
+            border-radius: 10px;
+        }
+    </style>
 </div>
 
 <!-- nav Jquery scripts -->

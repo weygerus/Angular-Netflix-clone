@@ -9,20 +9,40 @@ import * as $ from 'jquery';
 })
 export class BrowseComponent implements OnInit {
 
+  slides = [
+    {
+      img: '../../../assets/img/banner.png'
+    },
+    {
+      img: '../../../assets/img/banner.png'
+    },
+    {
+      img: '../../../assets/img/banner.png'
+    },
+    {
+      img: '../../../assets/img/banner.png'
+    },
+    {
+      img: '../../../assets/img/banner.png'
+    },
+    {
+      img: '../../../assets/img/banner.png'
+    },
+    {
+      img: '../../../assets/img/banner.png'
+    },
+    {
+      img: '../../../assets/img/banner.png'
+    },
+  ];
+  slideConfig = {slidesToShow: 7, slidesToScroll: 6, };
+
   constructor() { }
 
-  ngOnInit(): void {
-    $(function() {
-      $(window).on("scroll", function() {
-          if ($(window).scrollTop()! > 100) {
-              $(".main-menu").addClass("second-menu");
-              $(".main-lista").addClass("second-lista");
-          } else {
-              $(".main-menu").removeClass("second-menu");
-              $(".main-lista").removeClass("second-lista")
-          }
-      })
-  })
+  ngOnInit(): void { }
+
+slickInit(e: any){
+  console.log('slick initialized');
 }
 
 }

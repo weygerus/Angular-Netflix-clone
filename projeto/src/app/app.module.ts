@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './core/home/home.component';
 import { BrowseComponent } from './pages/browse/browse.component';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +27,7 @@ import { BrowseComponent } from './pages/browse/browse.component';
     RouterModule,
     AppRoutingModule,
     BrowserModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

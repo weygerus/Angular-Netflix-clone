@@ -1,0 +1,106 @@
+.brand{
+    margin-top: -10px;
+    margin-left: 35px;
+    margin-right: 10px;
+}
+.main-menu{
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    transition: 0.2s ease-out;
+    z-index: 20;
+}
+.second-menu{
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: #0a0a0a;
+    z-index: 20;
+}
+.main-list{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 5.5px;
+
+    color: #ffff;
+    list-style: none;
+    font-family: arial;
+    transition: 0.2s ease;
+}
+.second-list{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 5.5px;
+    
+    color: #ffff;
+    list-style: none;
+    font-family: arial;
+    transition: 0.2s ease;
+}
+
+.rigth-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    color: #fff;
+    margin-left: auto;
+    margin-right: 35px;
+    margin-top: -10px;
+
+    cursor: pointer;
+}
+.perfil-img{
+    width:35px;
+    border-radius: 4px;
+}
+
+.list-item{
+    cursor: pointer;
+    font-size: 15px;
+}
+.list-item:hover{
+    color: #ccc;
+    transition: 0.2s ease-in;
+}
+
+
+/* video */
+.bg-video{
+    width: 100%;
+}
+/* container-title */
+.container-title{
+    position: absolute;
+}
+.title{
+    width: 32vw;
+    position: absolute;
+    top: 20vw;
+    left: 4.5vw;
+}
+.assistir-more{
+    position: absolute;
+    top: 29vw;
+    left: 7vw;
+    display: flex;
+    gap: 15px;
+}
+.btn-light{
+    width: 140px;
+    height: 45px;
+    font-weight: bold;
+}
+.btn-secondary{
+    width: 200px;
+    height: 45px;
+    font-weight: bold;
+}
+
+
