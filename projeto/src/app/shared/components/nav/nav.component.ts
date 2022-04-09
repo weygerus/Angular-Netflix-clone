@@ -13,33 +13,58 @@ export interface Imenu {
 })
 export class NavComponent implements OnInit {
 
+  navegar: boolean = false;
+
   menuItens: Imenu[] = [
-    {item: "Inicio"},
-    {item: "Series"},
+    {item: "Início"},
+    {item: "Séries"},
     {item: "Filmes"},
-    {item: "bombando"},
-    {item: "minha lista"}
+    {item: "Bombando"},
+    {item: "Minha lista"}
   ]
   
   constructor() { }
 
   ngOnInit(): void {
-      $(function() {
+    // Função Jquery para alteração de cor da nav no scroll //
+    $(function() {
+      const menu = document.getElementById('menu');
         $(window).on("scroll", function() {
-          if ($(window).scrollTop()! > 50) {
-              document.getElementById('menu')!.style.backgroundColor = '#101010'
+          if($(window).scrollTop()! > 50) {
+            menu!.style.backgroundColor = '#101010'
           }
           else {
-              document.getElementById('menu')!.style.backgroundColor = 'transparent'
+            menu!.style.backgroundColor = 'transparent'
           }
         })
     });
   }
+
+
+  navegarclick(){
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuSeta   = document.getElementById('mobile-icon');
+
+    this.navegar = !this.navegar;
+    console.log('ok')
+    if(this.navegar == true){
+      mobileMenu!.style.opacity = '0.9';
+      menuSeta!.style.transform = 'rotate(-90deg)';
+      $('')
+    }else{
+      mobileMenu!.style.opacity = '0';
+      menuSeta!.style.transform = 'rotate(90deg)';
+    }
+  }
+
+
 }
 
 
 /*
-Solução anterior:
+FUNÇÕES DESCONTINUADAS
+
+Função troca de cor do menu:
 
 if ($(window).scrollTop()! > 50) {
   $(".main-menu").addClass("second-menu");
@@ -48,4 +73,19 @@ if ($(window).scrollTop()! > 50) {
   $(".main-menu").removeClass("second-menu");
   $(".main-list").removeClass("second-list");
 }
+
+
+Função dropdown navegar:
+
+$(function(){
+     $(".mobile-listitem").hover(
+       function(){
+         //hover-in
+         $(this).next('mobile-menu').css("opacity", "0")
+       },
+       function(){
+         //hover-out
+         $(this).next('mobile-menu').css("opacity", "1")
+       });
+   })
 */

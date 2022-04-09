@@ -1,0 +1,36 @@
+
+/* video */
+.bg-video{
+    width: 110%;
+}
+
+/* container-title */
+.container-title{
+    position: absolute;
+    overflow-x: visible;
+}
+.title{
+    width: 32vw;
+    position: absolute;
+    top: 20vw;
+    left: 4.5vw;
+}
+.assistir-more{
+    position: absolute;
+    top: 29vw;
+    left: 7vw;
+    display: flex;
+    gap: 15px;
+}
+.btn-light{
+    width: 140px;
+    height: 45px;
+    font-weight: bold;
+}
+.btn-secondary{
+    width: 200px;
+    height: 45px;
+    font-weight: bold;
+}
+
+

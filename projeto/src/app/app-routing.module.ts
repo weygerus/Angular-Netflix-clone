@@ -1,11 +1,11 @@
-import { BrowseComponent } from './pages/browse/browse.component';
-import { LoginComponent } from './core/auth/login/login.component';
-import { HomeComponent } from './core/home/home.component';
 import { NgModule, } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { GerenciarComponent } from './pages/perfil/gerenciar/gerenciar.component';
+import { LoginComponent } from './core/auth/login/login.component';
+import { HomeComponent } from './pages/home/home.component';
+
 import { PerfilComponent } from './pages/perfil/perfil.component';
+import { GerenciarComponent } from './pages/perfil/gerenciar/gerenciar.component';
 
 
 const routes: Routes = [
@@ -24,10 +24,6 @@ const routes: Routes = [
   {
     path: 'ManageProfiles',
     component: GerenciarComponent
-  },
-  {
-    path: 'Browse',
-    component: BrowseComponent
   },
 
 ];

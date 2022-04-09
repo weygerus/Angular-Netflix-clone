@@ -1,32 +1,40 @@
-<header class="main-banner">
+<header class="header">
     <nav class="main-menu" id="menu"> <!-- ou second-menu -->
 
-        <img src="../../../assets/img/netflix-logo-5.png" class="brand" width="100px" alt="brand">
+        <img src="../../../assets/img/netflix-logo-5.png" class="brand" width="90px" alt="brand">
 
-        <ul class="main-list"> <!-- ou second-list -->
+        <ul class="main-list">
             <li class="list-item" *ngFor="let menu of menuItens"><a>{{menu.item}}</a></li>
         </ul>
 
+        <div class="dropdown-box">
+            <ul class="mobile-list">
+                <li class="mobile-list-item">
+                    <a (click)="navegarclick()">Navegar
+                        <i class="bi bi-caret-down-fill" id="mobile-icon"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="detail">
+                    <div class="line"></div>
+                </div>
+                <li class="mobile-list-item" *ngFor="let menu of menuItens">{{menu.item}}</li>
+            </div>
+        </div>
+        
         <div class="rigth-list">
+
             <i class="bi bi-search"></i>
-            <li class="infantil-link"><a>Infantil</a></li>
+            <li class="list-item infantil" id="infantil"><a>Infantil</a></li>
             <i class="bi bi-bell-fill"></i>
+            
             <div class="nav-perfil-box">
                 <img src="../../../../assets/img/perfil.png" class="perfil-img" alt="perfil-img">
             </div>
-        </div>
 
+        </div>
+        
     </nav>
 </header>
 
-<div class="container-title">
-    <img class="title" src="../../../assets/img/interstellar-logo.png" alt="movie-title">
-    <div class="assistir-more">
-        <button class="btn btn-light">Assistir</button>
-        <button class="btn btn-secondary">Mais informações</button>
-    </div>
-</div>
-
-<div class="video-area">
-    <video class="bg-video" src="../../../assets/videos/Interestelar - Trailer Oficial 3 (dub) [HD].mp4" autoplay="true"></video>
-</div>
