@@ -5,10 +5,7 @@
 }
 
 /* container-title */
-.container-title{
-    position: absolute;
-    overflow-x: visible;
-}
+
 .title{
     width: 32vw;
     position: absolute;

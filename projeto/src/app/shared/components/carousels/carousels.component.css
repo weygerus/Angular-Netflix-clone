@@ -1,0 +1,23 @@
+
+.carousel-area{
+    margin-top: -20px;
+    background-color: #101010;
+}
+.img{
+    width: 97%;
+    border-radius: 5px;
+}
+.button-area{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -150px;
+}
+.btn-prev,.btn-next{
+    height: 150px;
+    background-color: #101010;
+    opacity: 0.7;
+    border: none;
+}
+.divisor{
+    height: 50px;
+}

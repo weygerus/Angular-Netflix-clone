@@ -1,9 +1,9 @@
-import { SwiperComponent } from 'swiper/angular';
 import { Component, OnInit, ViewChild } from '@angular/core';
-
+import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 export interface IBanners {
-  img: string;
+  id: number;
+  path: string;
   alt: string;
 }
 
@@ -14,55 +14,76 @@ export interface IBanners {
   styleUrls: ['./carousels.component.css']
 })
 export class CarouselsComponent implements OnInit {
-  @ViewChild('swiper', { static: false }) swiper?: SwiperComponent;
 
-  banners: IBanners[] = [
+  @ViewChild('slickModal') slickModal!: SlickCarouselComponent;
+
+  config = { 
+      infinite: true,
+      slidesToShow: 6,
+      slidesToScroll: 6,
+      arrows: true,
+      speed: 1500,
+    };
+
+  images: IBanners[] = [
     {
-      img: '../../../../assets/img/banners/1.jpg',
+      id: 1,
+      path: '../../../../assets/img/banners/1.jpg',
       alt: 'movie'
     },
     {
-      img: '../../../../assets/img/banners/2.jpg',
+      id: 2,
+      path: '../../../../assets/img/banners/2.jpg',
       alt: 'movie'
     },
     {
-      img: '../../../../assets/img/banners/3.jpg',
+      id: 3,
+      path: '../../../../assets/img/banners/3.jpg',
       alt: 'movie'
     },
     {
-      img: '../../../../assets/img/banners/4.jpg',
+      id: 4,
+      path: '../../../../assets/img/banners/4.jpg',
       alt: 'movie'
     },
     {
-      img: '../../../../assets/img/banners/5.jpg',
+      id: 5,
+      path: '../../../../assets/img/banners/5.jpg',
       alt: 'movie'
     },
     {
-      img: '../../../../assets/img/banners/6.jpg',
+      id: 6,
+      path: '../../../../assets/img/banners/6.jpg',
       alt: 'movie'
     },
     {
-      img: '../../../../assets/img/banners/7.jpg',
+      id: 7,
+      path: '../../../../assets/img/banners/7.jpg',
       alt: 'movie'
     },
     {
-      img: '../../../../assets/img/banners/8.jpg',
+      id: 8,
+      path: '../../../../assets/img/banners/8.jpg',
       alt: 'movie'
     },
     {
-      img: '../../../../assets/img/banners/9.jpg',
+      id: 9,
+      path: '../../../../assets/img/banners/9.jpg',
       alt: 'movie'
     },
     {
-      img: '../../../../assets/img/banners/10.jpg',
+      id: 10,
+      path: '../../../../assets/img/banners/10.jpg',
       alt: 'movie'
     },
     {
-      img: '../../../../assets/img/banners/11.jpg',
+      id: 11,
+      path: '../../../../assets/img/banners/11.jpg',
       alt: 'movie'
     },
     {
-      img: '../../../../assets/img/banners/12.jpg',
+      id: 12,
+      path: '../../../../assets/img/banners/12.jpg',
       alt: 'movie'
     },
   ]
@@ -72,4 +93,11 @@ export class CarouselsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  next() {
+    this.slickModal.slickNext();
+  }
+  
+  prev() {
+    this.slickModal.slickPrev();
+  }
 }

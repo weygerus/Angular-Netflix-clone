@@ -19,7 +19,8 @@ import { BgVideosComponent } from './shared/components/bg-videos/bg-videos.compo
 import { CarouselsComponent } from './shared/components/carousels/carousels.component';
 
 // Modulos externos
-import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 @NgModule({
   declarations: [
@@ -37,8 +38,8 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
     RouterModule,
     AppRoutingModule,
     BrowserModule,
-    NgxUsefulSwiperModule
-  ],
+    SlickCarouselModule
+    ],
   providers: [ 
   ],
   bootstrap: [AppComponent],
