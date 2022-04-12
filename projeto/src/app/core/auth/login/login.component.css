@@ -10,10 +10,6 @@
     left: 45.9px;
     z-index: 10;
 }
-
-
-
-
 /* */
 .container-login{
     position: absolute;
@@ -44,6 +40,9 @@
     box-shadow: none;
     background-color: #454545;
 }
+.input-placeholder{
+    overflow-y: hidden;
+}
 .titulo{
     color: #fff;
     font-size: 35px;
@@ -51,14 +50,29 @@
     margin: 0 15%;
     margin-bottom: 30px;
     margin-top: 15px;
+    overflow-y: hidden;
 }
 /*  */
 
 
+/* BOTÃO SUBMIT */
+.btn-danger{
+    width: 70%;
+    height: 50px;
+    margin: 20px auto;
+}
+.btn-danger>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* --------- */
 /* DIV LEMBRAR-AJUDA  */
 .lembrar-ajuda{
     display: flex;
     align-items: center;
+    height: 30px;
 }
 .input-placeholder{
     color: #ccc;
@@ -146,6 +160,7 @@ span.assine-agora:hover{
     line-height: 15px;
     width: 300px;
     font-size: 13px;
+    overflow-y: hidden;
 }
 .quebra{
     margin-top: -2px;
@@ -165,19 +180,6 @@ span.assine-agora:hover{
 /* --------- */
 
 
-/* BOTÃO SUBMIT */
-.btn-danger{
-    width: 70%;
-    height: 50px;
-    margin: 20px auto;
-}
-.btn-danger>a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-}
-/* --------- */
 
 
 

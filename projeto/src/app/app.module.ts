@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 // Core
 import { LoginComponent } from './core/auth/login/login.component';
 
-// Pages
+// Pages 
 import { HomeComponent } from './pages/home/home.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { GerenciarComponent } from './pages/perfil/gerenciar/gerenciar.component';
@@ -18,8 +18,17 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { BgVideosComponent } from './shared/components/bg-videos/bg-videos.component';
 import { CarouselsComponent } from './shared/components/carousels/carousels.component';
 
+// Sections (Menu)
+import { InicioComponent } from './pages/sections/inicio/inicio.component';
+import { SeriesComponent } from './pages/sections/series/series.component';
+import { FilmesComponent } from './pages/sections/filmes/filmes.component';
+import { BombandoComponent } from './pages/sections/bombando/bombando.component';
+import { MinhaListaComponent } from './pages/sections/minha-lista/minha-lista.component';
+
 // Modulos externos
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+
+
 
 
 @NgModule({
@@ -33,6 +42,11 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     FooterComponent,
     BgVideosComponent,
     CarouselsComponent,
+    InicioComponent,
+    SeriesComponent,
+    FilmesComponent,
+    BombandoComponent,
+    MinhaListaComponent,
   ],
   imports: [
     RouterModule,

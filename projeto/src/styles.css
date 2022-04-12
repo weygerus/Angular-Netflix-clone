@@ -1,9 +1,8 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
-@import '~font-awesome/css/font-awesome.min.css';
 *{
     margin: 0;
     padding: 0;
-    
+
     list-style: none;
     text-decoration: none;
     overflow-x: hidden;

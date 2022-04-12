@@ -1,8 +1,45 @@
-
 .carousel-area{
-    margin-top: -20px;
+    margin-top: -55px;
     background-color: #101010;
 }
+.space{
+    height: 90px;
+}
+
+/* #region titulos */
+.title{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+
+    margin-left: 60px;
+    margin-bottom: 15px;
+
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ver-tudo{
+    opacity: 0;
+    font-size: 15px;
+    color: #fff;
+    padding-top: 9px;
+    padding-left: 10px;
+    transition: 0.2s ease;
+}
+.title:hover li{
+    opacity: 1;
+}
+.bi-caret-right-fill{
+    font-size: 10px;
+}
+/* #endregion */
+
+/* #region botões */
 .img{
     width: 97%;
     border-radius: 5px;
@@ -10,14 +47,30 @@
 .button-area{
     display: flex;
     justify-content: space-between;
-    margin-top: -150px;
+    margin-top: -120px;
 }
 .btn-prev,.btn-next{
-    height: 150px;
+    width: 55px;
+    height: 120px;
     background-color: #101010;
-    opacity: 0.7;
+    opacity: 0.4;
     border: none;
 }
-.divisor{
-    height: 50px;
+.btn-prev:hover,.btn-next:hover{
+    opacity: 0.7;
 }
+.bi-chevron-left,.bi-chevron-right{
+    display: none;
+    color: #ffff;
+    font-size: 35px;
+    opacity: 2;
+}
+.btn-prev:hover .bi-chevron-left{
+    display: block;
+}
+.btn-next:hover .bi-chevron-right{
+    display: block;
+}
+/* #endregion */
+
+

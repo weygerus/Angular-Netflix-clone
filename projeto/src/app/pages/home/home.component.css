@@ -1,5 +1,6 @@
+
 .area{ 
-    height: 200vh;
+    overflow-y: hidden;
 }
 .img-fundo{
     background-image: url(../../../assets/img/img-home.jpg);
@@ -84,6 +85,7 @@
     font-size: 65px;
     font-weight: 700;
     width: 700px;
+    overflow-y: hidden;
 }
 .page-subtitle{
     font-size: 29px;
@@ -144,92 +146,9 @@
 
 
 
-
-/*
-.home-box{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 240px;
-    text-align: center;
-    
-    max-width: 800px;
-}
-.page-title,.page-subtitle,.label-input{
-    color: #ffff;
-}
-.page-title{
-    font-size: 65px;
-    font-weight: 700;
-}
-.page-subtitle{
-    font-size: 30px;
-}
-@media (max-width:1450px){
-    
-    .page-title{
-        font-size: 45px;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-}
-.input-box{
-    display: flex;
-    justify-content: center;
-}
-input.email{
-    width: 500px;
-    height: 70px;
-    padding-left: 10px;
-}
-.button-email{
-    background-color: red;
-    color: #ffff;
-    
-    width: 200px;
-    height: 70px;
-
-    border: none;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: 500;
-}
-.input:focus{
-    outline: none;
-    border: 3px solid lightblue;
-}
-@media(max-width: 1500px){
-    input.email{
-        max-width: 90%;
-        height: 60px;
-    }
-    .button-email{
-        width: 150px;
-        height: 60px;
-        font-size: 20px;
-    }
-}
-@media(max-width: 950px){
-    .input-box{
-        flex-direction: column;
-    }
-    input.email{
-        margin: 0 auto;
-    }
-    .button-email{
-        margin: 0 auto;
-    }
-} */
-
-
-/* Fim */
-
-
 /* page Imagem-textos*/
 .page{ 
     width: 100%;
-    height: 1630px;
     background-color: #000;
 }
 .wrapper{
@@ -259,6 +178,7 @@ input.email{
     font-size: 60px;
     margin-top: 0px;
     max-width: 570px;
+    overflow-y: hidden;
 }
 .sub-title{
     max-width: 500px;
@@ -273,9 +193,6 @@ input.email{
     margin-top: 20px;
 }
 @media(max-width:1020px){
-    .page{
-        height: 2800px;
-    }
     .box-area,.area-reverse{
         height: 700px;
         flex-direction: column;

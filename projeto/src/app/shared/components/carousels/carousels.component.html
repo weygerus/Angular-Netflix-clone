@@ -1,78 +1,29 @@
 <div class="carousel-area">
 
-    <ngx-slick-carousel
-        class="carousel"
-        #slickModal="slick-carousel"
-        [config]="config"
-        >
+    <div class="slider-container" *ngFor="let carousel of carousels">
 
-        <div ngxSlickItem *ngFor="let slide of images" class="slide">
-            <img class="img" src="{{slide.path}}" alt="{{slide.alt}}">
+        <ul class="title">{{carousel.title}}
+            <li class="ver-tudo">Ver tudo<i class="bi bi-caret-right-fill"></i></li>
+        </ul>
+
+        <ngx-slick-carousel
+            class="carousel"
+            #slickModal="slick-carousel"
+            [config]="config">
+
+            <div ngxSlickItem *ngFor="let slide of images" class="slide">
+                <img class="img" src="{{slide.path}}" alt="{{slide.alt}}">
+            </div>        
+        </ngx-slick-carousel>
+
+        <div class="button-area">
+            <button class="btn-prev" id="{{carousel.id}}" (click)="prev()"><i class="bi bi-chevron-left"></i></button>
+            <button class="btn-next" id="{{carousel.id}}" (click)="next()"><i class="bi bi-chevron-right"></i></button>        
         </div>
-
-    </ngx-slick-carousel>
-    <div class="button-area">
-        <button class="btn-prev" (click)="prev()">prev</button>
-        <button class="btn-next" (click)="next()">next</button>        
+        
+        <div class="space"></div>
+        
     </div>
-
-    <div class="divisor"></div>
-
-    <ngx-slick-carousel
-        class="carousel"
-        #slickModal="slick-carousel"
-        [config]="config"
-        >
-
-        <div ngxSlickItem *ngFor="let slide of images" class="slide">
-            <img class="img" src="{{slide.path}}" alt="{{slide.alt}}">
-        </div>
-
-    </ngx-slick-carousel>
-    <div class="button-area">
-        <button class="btn-prev" (click)="prev()">prev</button>
-        <button class="btn-next" (click)="next()">next</button>        
-    </div>
-
-    <div class="divisor"></div>
-
-    <ngx-slick-carousel
-        class="carousel"
-        #slickModal="slick-carousel"
-        [config]="config"
-        >
-
-        <div ngxSlickItem *ngFor="let slide of images" class="slide">
-            <img class="img" src="{{slide.path}}" alt="{{slide.alt}}">
-        </div>
-
-    </ngx-slick-carousel>
-    <div class="button-area">
-        <button class="btn-prev" (click)="prev()">prev</button>
-        <button class="btn-next" (click)="next()">next</button>        
-    </div>
-
-    <div class="divisor"></div>
-
-
-    <ngx-slick-carousel
-        class="carousel"
-        #slickModal="slick-carousel"
-        [config]="config"
-        >
-
-        <div ngxSlickItem *ngFor="let slide of images" class="slide">
-            <img class="img" src="{{slide.path}}" alt="{{slide.alt}}">
-        </div>
-
-    </ngx-slick-carousel>
-    <div class="button-area">
-        <button class="btn-prev" (click)="prev()">prev</button>
-        <button class="btn-next" (click)="next()">next</button>        
-    </div>
-
-
-
 
 
 </div>

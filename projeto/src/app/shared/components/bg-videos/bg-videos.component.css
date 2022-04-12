@@ -2,6 +2,7 @@
 /* video */
 .bg-video{
     width: 110%;
+    z-index: -20;
 }
 
 /* container-title */
